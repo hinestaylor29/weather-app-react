@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import axios from 'axios';
+import FormattedDate from './FormattedDate';
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -9,12 +10,12 @@ export default function Weather(props) {
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
-      wind:response.data.wind.speed,
+      wind: response.data.wind.speed,
       city: response.data.name,
-      humitidity: response.data.main.humidity,
+      humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
       iconUrl: response.data.weather[0].icon,
-      date: "Wednesday 10:00",
+      date: new Date(response.data.dt * 1000),
     }); 
   }
 
@@ -47,12 +48,12 @@ export default function Weather(props) {
         </div>
 
         <div className="col-6">
-          <h1> {Math.round(weatherData.temperature)} C </h1>
+          <h1> {Math.round(weatherData.temperature)} °C </h1>
           <h1> {weatherData.city} </h1>
 
           <h4 className="text-capitalize">{weatherData.description}</h4>
 
-          <h4> {weatherData.city} </h4>
+          <h4> <FormattedDate date={weatherData.date}/> </h4>
 
           <span className="units">
             <a href="/" className="active">
@@ -60,8 +61,8 @@ export default function Weather(props) {
             </a>{" "}
             |<a href="/">°F</a>
           </span>
-          <p className="metadata"> {weatherData.humidity}%</p>
-          <p className="metadata"> {weatherData.wind}km/h</p>
+          <p className="metadata"> {weatherData.humidity} %</p>
+          <p className="metadata"> {weatherData.wind} km/h</p>
         </div>
       </div>
     </div>
