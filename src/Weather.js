@@ -18,7 +18,7 @@ export default function Weather() {
             className="search-bar col-6"
             type="text"
             placeholder="Try 'New York'..."
-            autoFocus="off"
+            autoFocus="on"
             autoComplete="off"
           />
           <input className="search-button col-2" type="submit" value="Search" />

@@ -1,4 +1,14 @@
 .App {
   background: #f4f4f4 0.5;
   font-family: "Lato", sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: block;
+}
+
+.footer{
+font-size: 12px;
+margin: 0 auto;
+display: block;
+max-width: 200px;
 }

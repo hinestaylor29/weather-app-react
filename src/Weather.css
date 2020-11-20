@@ -1,8 +1,6 @@
 .container{
   border: 2px solid rgb(216, 216, 216);
   border-radius: 8px;
-  margin: 0 auto;
-  display: block;
   margin-top: 50px;
   width: 90%;
 }
@@ -16,6 +14,7 @@
   box-shadow: 1px 1px 3px 1px #baafaf;
   text-align: center;
   max-width: 100px;
+  margin: 0px 5px 0px 5px;
 }
 
 .search-button:hover {
