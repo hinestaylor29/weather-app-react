@@ -6,10 +6,10 @@ import Attribution from "./Attribution";
 export default function App() {
   return (
     <div className="App">
-      <div>
+      <div className="container">
       <Weather />
-      </div>
       < Attribution />
+      </div>
     </div>
   );
 }

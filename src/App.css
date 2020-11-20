@@ -3,6 +3,8 @@
   font-family: "Lato", sans-serif;
   border: 2px solid rgb(216, 216, 216);
   border-radius: 8px;
+  margin: 0 auto;
+  display: block;
   margin-top: 50px;
-  margin-bottom: 0px;
+  width: 90%;
 }
