@@ -43,7 +43,7 @@ export default function Weather(props) {
       <div className="row">
         <div className="col-4">
           <div className="float-right">
-          <img src={weatherData.iconUrl} id="icon" />
+          <img src={weatherData.iconUrl} alt="weather icon" id="icon" />
           </div>
         </div>
 
