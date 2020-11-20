@@ -1,3 +1,12 @@
+.container{
+  border: 2px solid rgb(216, 216, 216);
+  border-radius: 8px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+  width: 90%;
+}
+
 .search-button {
   background: #557571;
   padding: 10px 15px 10px 15px;

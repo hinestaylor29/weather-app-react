@@ -8,8 +8,8 @@ export default function App() {
     <div className="App">
       <div className="container">
       <Weather />
-      < Attribution />
       </div>
+     <Attribution />
     </div>
   );
 }
