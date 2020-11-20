@@ -47,7 +47,7 @@ export default function Weather(props) {
         </div>
 
         <div className="col-6">
-          <h1> {Math.round(temperature)} C </h1>
+          <h1> {Math.round(weatherData.temperature)} C </h1>
           <h1> {weatherData.city} </h1>
 
           <h4 className="text-capitalize">{weatherData.description}</h4>
