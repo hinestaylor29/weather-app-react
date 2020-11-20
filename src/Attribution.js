@@ -1,4 +1,5 @@
 import React from 'react';
+import './Attribution.css';
 
 
 export default function Attribution() {
