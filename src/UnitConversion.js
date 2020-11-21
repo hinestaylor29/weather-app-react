@@ -18,9 +18,8 @@ export default function UnitConversion(props){
     return (
         <span>
             <span className="temp">{Math.round(props.celsius)}</span>{" "}
-            <a href="/">
               °C{" "}
-            </a>{" "}
+            {" "}
             |<a href="/" onClick={convertFahrenheit} >°F</a>
         </span>
     );
@@ -32,7 +31,7 @@ export default function UnitConversion(props){
             <a href="/" onClick={convertCelsius}>
               °C{" "}
             </a>{" "}
-            |<a href="/">°F</a>
+            |°F
         </span>
         );
     }
