@@ -53,20 +53,17 @@
 }
 
 #icon {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   display: block;
 }
 
 .metadata {
+  margin-top: 5px;
   margin-bottom: 0px;
 }
 
-.units.active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
-
-.units.active:hover {
-  text-decoration: none;
+.temp{
+  font-weight: bolder;
+  font-size: 35px;
 }
