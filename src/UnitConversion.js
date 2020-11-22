@@ -10,7 +10,7 @@ export default function UnitConversion(props){
 
     function convertCelsius(event){
         event.preventDefault();
-        setUnit("celsuis");
+        setUnit("celsius");
     }
 
 
